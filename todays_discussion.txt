@@ -1,0 +1,77 @@
+Collections:- Group of object.
+Collection framework related classes provide us with container object
+to hold other objects.
+
+Different types of collection related classes:-
+* List
+List cares about the index.
+List are ordered
+List can have duplicate values
+    ArrayList,LinkedList,Vector
+* Set
+Set are unordered.
+Set cannot have duplicate values.
+   HashSet,TreeSet,LinkedHashSet
+Map
+data are stored as Key value pairs.
+keys are always unique.
+---------------------------------------------------------------------
+Collection =====> Interface
+List,Set========> Interface which extends Collection.
+Map is an interface but it is not extending Collection interface.
+Collections class =====> It is having various static utility methods.
+
+Collection of numbers
+Collection of String'
+Collection of User Defined classes
+
+----------------------------------------------------------------------
+List is an interface . We cannot create object of Interface. 
+So we wont be able to write 
+List list=new List();
+ArrayList implements List 
+LinkedList implements List
+
+Which collection should be used when?
+For example if we want to have ordered and indexed based arrangement we go for List.
+ArrayList is backed up by an array.
+So if we are looking for search based on position , ArrayList will be the best.
+When it comes to deletion or insertion of items
+LinkedList will be the best option , why so?
+Because in case of linkedList , it has the concept of managing the reference of next element so 
+when we delete or insert new items , these references can be updated easily and deletion and insertion
+becomes easier.
+-----------------------------------------------------------------------------------------------------
+AutoBoxing and UnBoxing
+
+For every primitive type we have corresponding Wrapper class
+
+char ======= > Character
+byte =======> Byte
+short =======> Short
+int =========> Integer
+long========> Long
+float =======> Float
+double =======> Double
+boolean ======> Boolean
+String is not a Wrapper class.
+
+
+Wrapper objects are immutable. 
+--------------------------------------------------------------------
+Generics cannot be with the primitive type
+
+   ArrayList<int> list=new ArrayList<>();
+So the above line is incorrect.
+
+   ArrayList<Integer> list=new ArrayList<>();
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
